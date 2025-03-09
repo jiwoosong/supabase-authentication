@@ -21,4 +21,5 @@ if os.path.exists(admin_path):
     spec.loader.exec_module(admin)
     sys.modules["supabase_auth.admin"] = admin
 
-from supabase_auth.client import manage_license
+import supabase_auth.client
+import supabase_auth.admin
